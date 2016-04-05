@@ -1,17 +1,47 @@
+
 <!DOCTYPE html>
 
-<html ng-app="guestList1" ng-controller="GuestController">
+<html ng-app="content">
 <head>
-<script type="text/javascript" src ="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
-<title>Angular App</title>
+  <script type="text/javascript" src ="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+  <!-- <script type="text/javascript" src="app.js"></script> -->
+
+  <title>Angular App</title>
 </head>
-<body>
-  Add guest name here:
-  <input type="text" ng-model="guestname"/>
-<h1 ng=show="guestname"> {{guestname}}</h1>
 
 
- <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+<body ng-controller="GuestController as guest">
+
+  <section ng-controller="GuestController as guest">
+    <div ng-repeat="person in person.people">
+
+    <h1>Name: {{person.name}}</h1>
+
+    <h1>Age: {{person.age}}</h1>
+
+</div>
+  </section>
+  <header>
+    <nav>
+      <a ng-class="{currentTab: tab == 'home'}"href="" ng-click="tab = 'home'">HOME</a>
+      <a ng-class="{currentTab: tab == 'about'}"href="" ng-click="tab = 'about'">ABOUT</a>
+      <a ng-class="{currentTab: tab == 'store'}"href="" ng-click="tab = 'store'">STORE</a>
+    </nav>
+  </header>
+
+  <main>
+  <section id="home" ng-show="tab == 'home'">
+      Welcome Home!
+    </section>
+    <section id="about" ng-show="tab == 'about'">
+      About Us
+    </section>
+    <section id="store" ng-show="tab == 'store'">
+      Store
+    </section>
+  </main> -->
+
+<script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
 </body>
 
 

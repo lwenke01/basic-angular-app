@@ -1,3 +1,22 @@
 'use strict';
 
-module.exports = 'It works from content.js.';
+module.exports = ('content', [])
+.controller('GuestController', function(){
+  this.guests= [
+    {
+      name: 'Glen',
+      foodPref: 'seafood',
+      rsvp: 'true'
+
+
+    },
+    {
+      name: 'Dale',
+      foodPref: 'pasta',
+      rsvp: 'true'
+
+
+    }
+
+]
+});
