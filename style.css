@@ -1,4 +1,18 @@
 
 body {
-    background: yellow;
+    background: lightgreen;
+}
+
+.currentTab{
+  border: solid;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+h1 {
+color: blue
 }

@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 
-<html ng-app="guestList1" ng-controller="GuestController">
+<html ng-app="party" >
 <head>
-<script type="text/javascript" src ="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
-<title>Angular App</title>
+  <script type="text/javascript" src ="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+  <script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
+  <meta charset="utf-8">
+  <title>Angular App</title>
 </head>
-<body>
-  Add guest name here:
-  <input type="text" ng-model="guestname"/>
-<h1 ng=show="guestname"> {{guestname}}</h1>
+<body ng-controller="PartyController as party">
+  <h1>{{party.party}}</h1>
+
+  <div>
+    Guests:
+
+    <h1>{{party.guestname[0]}} <button ng-click="party.guestname[0] = ''">Delete</button></h1>
+    <h1>{{party.guestname[1]}} <button ng-click="party.guestname[1] = ''">Delete</button></h1>
+    <h1>{{party.guestname[2]}} <button ng-click="party.guestname[2] = ''">Delete</button></h1>
 
 
- <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+    </div>
 </body>
 
 
