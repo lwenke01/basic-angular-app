@@ -1,17 +1,17 @@
 
 body {
-    background: lightgreen;
+    background: lightblue;
 }
 
 .currentTab{
   border: solid;
 }
 
-div {
+/*div {
   display: flex;
   flex-direction: column;
   justify-content: right;
-}
+}*/
 
 h1 {
 color: blue
