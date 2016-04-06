@@ -1,22 +1,10 @@
 'use strict';
 
-module.exports = ('content', [])
-.controller('GuestController', function(){
-  this.guests= [
-    {
-      name: 'Glen',
-      foodPref: 'seafood',
-      rsvp: 'true'
+module.exports = angular.module('party', [])
+.controller('PartyController', function(){
+  this.party = 'Spring Gala';
+  this.time = 'Saturday 8pm';
+  this.guestname= ['Glen', 'Dale', 'Sally', 'Margo'];
 
 
-    },
-    {
-      name: 'Dale',
-      foodPref: 'pasta',
-      rsvp: 'true'
-
-
-    }
-
-]
 });

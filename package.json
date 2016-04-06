@@ -4,6 +4,7 @@
   "description": "Setup an app server with Angular, Webpack and Express.",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4"
   },
   "devDependencies": {

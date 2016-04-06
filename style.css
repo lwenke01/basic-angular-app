@@ -1,18 +1,18 @@
 
 body {
-    background: yellow;
+    background: lightgreen;
 }
 
 .currentTab{
   border: solid;
 }
 
-nav {
+div {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: right;
 }
 
-li {
-  margin-left: 1.5em
+h1 {
+color: blue
 }
